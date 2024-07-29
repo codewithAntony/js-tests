@@ -59,3 +59,81 @@
 // }
 
 // console.log(updatedNames(names));
+
+// Accessing JSON array using map() method
+
+// let jsonArray = [
+//     {
+//         "ComapnyName": "GeeksforGeeks",
+//         "Location": "Noida"
+//     },
+//     {
+//         "Courses": [
+//             "DSA self paced course",
+//             "DevOps Boot camp",
+//             "GATE prepration course"
+//         ],
+//         "Topics": [
+//             "Web Devlopment",
+//             "Machine Learning",
+//             "Artifical Intelligence",
+//             "Data Science"
+//         ]
+//     }
+// ];
+
+// let modifiedArray = jsonArray.map((item) => {
+//     return item.ComapnyName ?
+//         item. ComapnyName.toUpperCase() :
+//         item.Courses.join(", ");
+// });
+
+// console.log(modifiedArray);
+
+// for (let element of jsonArray) {
+//     console.log(element);
+// }
+
+// How to replace an item from an array in JavaScript 
+// Using Array Indexing
+// let array = [1, 2, 3, 4, 5];
+// const index = 2;
+// const newValue = 10;
+// array[index] = newValue;
+// console.log(array)
+
+// How to select a random element from array in JavaScript
+// Using Math.random() function
+
+// let arr = ["GFG_1", "GeeksForGeeks",
+//     "Geeks", "Computer Science Portal"];
+
+// function randomness() {
+//     console.log(arr[(Math.floor(Math.random() * arr.length))]);
+// }
+
+// randomness()
+
+// Create an array of given size in JavaScript
+//  Using JavaScript array() constructor
+
+// let arr = new Array("Geeks for geeks");
+// console.log(arr)
+
+// How to Get First N Elements from an Array in JavaScript
+// Using the slice() method
+// const arr = [1,2,3,4,5,6];
+// const n = 3;
+// const new_array = arr.splice(0, n)
+// console.log(new_array)
+
+//Using a for loop
+const arr = [1,2,3,4,5,6];
+const n = 3
+const result = []
+
+for (let i = 0; i < n; i++) {
+    result.push(arr[i])
+}
+
+console.log(result)
