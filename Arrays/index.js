@@ -128,12 +128,109 @@
 // console.log(new_array)
 
 //Using a for loop
-const arr = [1,2,3,4,5,6];
-const n = 3
-const result = []
+// const arr = [1,2,3,4,5,6];
+// const n = 3
+// const result = []
 
-for (let i = 0; i < n; i++) {
-    result.push(arr[i])
-}
+// for (let i = 0; i < n; i++) {
+//     result.push(arr[i])
+// }
 
-console.log(result)
+// console.log(result)
+
+// How to modify an object’s property in an array of objects in JavaScript
+// Using the Array.map() method
+
+// let employees_data = [
+//     {
+//         employee_id: 1,
+//         employee_name: "Aman",
+//     },
+//     {
+//         employee_id: 2,
+//         employee_name: "Bhargava",
+//     },
+//     {
+//         employee_id: 3,
+//         employee_name: "Chaitanya",
+//     },
+// ];
+
+// const modifiedEmployees = employees_data.map(obj => {
+//     if (obj.employee_id == 2) {
+//         return {...obj, employee_name: "Kevin"}
+//     }
+//     return obj
+// })
+
+// console.log(modifiedEmployees)
+
+// let nums = 0
+// for (let i = 0; i < 100; i++) {
+//     nums[i] = i + 1
+// }
+// console.log(nums)
+
+// let myAlphabet = ['A', 'B', 'C', 'D','E','F', 'G'];
+// // myAlphabet.length;
+// // console.log(myAlphabet)
+
+// function myAlphabetLength(array) {
+//     // myAlphabet.length;
+//     // console.log(myAlphabet)
+//     if (array.length < 4) {
+//         console.log("The arrray has less than 4 items")
+//         array.push("H", "i", "J")
+//         console.log("Array extended to: ", array)
+//     } else {
+//         console.log("It doesn't")
+//         let concanatedArray = array.join("- ")
+//         console.log("concanated string of the array: ", concanatedArray)
+//     }
+// }
+// myAlphabetLength(myAlphabet)
+
+// function checkFunc(inputString, flag) {
+//     if (typeof inputString != "string") {
+//         console.log("The first parameter must be a string");
+//         return;
+//     }
+//     if (typeof flag != "boolean") {
+//         console.log("The second parameter must be a boolean")
+//     }
+
+//     if (flag) {
+//         console.log(`The string "${inputString}" was provided with the flag set to true`)
+//     } else {
+//         console.log(`The string "${inputString}" was provided with the flag set to false`);
+//     }
+// }
+
+// // checkFunc("Hello, World!", true);   // Call with a string and true
+// checkFunc("JavaScript", false);     // Call with a string and false
+// checkFunc("OpenAI", "not boolean"); // Call with incorrect boolean type
+// checkFunc(12345, true); 
+
+// let planets = ["earth", "pluto", "venus", "mars", "jupiter"];
+// // console.log(planets);
+// planets.forEach((planet, index) => {
+//     planets = `Index: ${index}, Planet: ${planet}`
+//     console.log(planets)
+// })
+
+// let wowDataTypes = [
+//     "OpenAI",
+//     2024,
+//     true,
+//     undefined,
+//     Symbol('GPT')
+// ]
+
+// wowDataTypes.forEach((item, index) => {
+//     console.log(`Index: ${index}, Value: ${item}, Data Type: ${typeof item}`)
+// })
+
+let myArr = [ 1, 2, 'One', true];
+
+updatedArr = [...myArr, new Set()]
+console.log(updatedArr)
